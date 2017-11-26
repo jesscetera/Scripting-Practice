@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Hello, what is your name?"
+read NAME
+if [ "$NAME" = "Jessica" ]
+then 
+  echo "Hello, creator!"
+elif [ "$NAME" = "Brandon" ]
+then
+  echo "Leave and never come back!"
+  exit
+else
+  echo "Hello $NAME, its nice to meet you!"
+fi
+echo -n "The time is: "
+date

@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+import sys, os
+
+# Initialize
+current_location="/"
+
+# Grabs the path to a file or directory supplied as a command line argument
+path = sys.argv[1]
+
+# Splitting the supplied path along the '/' for parsing
+path_parts = path.split('/')
+
+for piece in path_parts :
+	current_location = current_location+piece
+	if os.path.isdir(current_location):
+		current_location = current_location+"/"
+	os.system("ls -ld %s"%(current_location[1:]))
+

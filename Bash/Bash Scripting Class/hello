@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Hello, what is your name?"
+read NAME
+
+case $NAME in
+  "Jessica" )
+    echo "Greetings, Creator!"
+    ;;
+  "Brandon" )
+    echo "Leave and never come back!"
+    exit
+    ;;
+  * )
+    echo "Hello $NAME, it’s nice to meet you!"
+esac
+
+echo -n The current time is:\ 
+date

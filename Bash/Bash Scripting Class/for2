@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Hello, what is your name?"
+read NAME
+for TIME in Three Two One
+do
+  echo "$TIME"
+  sleep 1
+done
+echo "Hello $NAME!!"
+echo -n "The current time is: "
+date

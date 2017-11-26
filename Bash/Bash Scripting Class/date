@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DATE=`date | awk '{print $3}'`
+
+if [[ $DATE = "15" || $DATE = "1"  ]]
+then
+echo "Yay, its payday!"
+
+else
+echo "Boo... its not payday yet."
+fi
